@@ -1,21 +1,22 @@
-//Ligação com uma biblioteca. Iostream permite a entrada e saída de informação.
+//LigaÃ§Ã£o com uma biblioteca. Iostream permite a entrada e saÃ­da de informaÃ§Ã£o.
 #include <iostream>
+//Evita a repetiÃ§Ã£o do "std::"
 using namespace std;
-//Começo do código. É necessário usar para o funcionamento do código.
+//ComeÃ§o do cÃ³digo. Ã‰ necessÃ¡rio usar para o funcionamento do cÃ³digo.
 int main() {
-    //Declaração das variaveis para o código.
+    //DeclaraÃ§Ã£o das variaveis para o cÃ³digo.
    float raio, area;
-    //Variavel constante, ou seja, o valor não muda.
+    //Variavel constante, ou seja, o valor nÃ£o muda.
    const float PI = 3.14159;
-    //Interface do usuário
+    //Interface do usuÃ¡rio
    cout << "Digite o raio do circulo: ";
-   //Recebe o valor que o usuario escolheu para a variavel em questão.
+   //Recebe o valor que o usuario escolheu para a variavel em questÃ£o.
    cin >> raio;
    
-   //Equação utilizada.
+   //EquaÃ§Ã£o utilizada.
    area = PI * raio * raio;
    
    //Interface que mostra o resultado final.
-   cout << "A area do circulo é: " << area << endl;
+   cout << "A area do circulo Ã©: " << area << endl;
     return 0;
 }
