@@ -1,43 +1,44 @@
-//LigaÁ„o com uma biblioteca. Iostream permite a entrada e saÌda de informaÁ„o.
+//Liga√ß√£o com uma biblioteca. Iostream permite a entrada e sa√≠da de informa√ß√£o.
 #include <iostream>
-//Segunda biblioteca, agora voltada para calculos matematicos. Sem ela codigos como sqrt n„o funcionam.
+//Segunda biblioteca, agora voltada para calculos matematicos. Sem ela codigos como sqrt n√£o funcionam.
 #include <cmath>
+//Evita a repeti√ß√£o do "std::";
 using namespace std;
-//ComeÁo do cÛdigo. … necess·rio usar para o funcionamento do cÛdigo.
+//Come√ßo do c√≥digo. √â necess√°rio usar para o funcionamento do c√≥digo.
 int main() {
-    //DeclaraÁ„o das variaveis.
+    //Declara√ß√£o das variaveis.
    float a, b, c, x1, x2, delta;
    
    //Interface do usuario.
    cout << "Digite o valor de a: ";
-   //Recebe a informaÁ„o do usuario.
+   //Recebe a informa√ß√£o do usuario.
    cin >> a;
    //Segunda interface do usuario.
    cout << "Digite o valor de b: ";
-   //Recebe a informaÁ„o referente a a interface anterior.
+   //Recebe a informa√ß√£o referente a a interface anterior.
    cin >> b;
    //Terceira interface do usuario.
    cout << "Digite o valor de c: ";
-   //Recebe as informaÁıes da interface anterior.
+   //Recebe as informa√ß√µes da interface anterior.
    cin >> c;
    
-   //EquaÁ„o do delta. Pow permite a B elevado a 2 funcionar.
+   //Equa√ß√£o do delta. Pow permite a B elevado a 2 funcionar.
    delta = pow(b, 2) - 4 * a * c;
    
-   //CondiÁ„o onde o delta precisa, obrigatÛoriamente, ser 0 ou maior para dar as respotas relacionadas.
+   //Condi√ß√£o onde o delta precisa, obrigat√≥oriamente, ser 0 ou maior para dar as respotas relacionadas.
    if (delta >=0) {
-       //EquaÁ„o que da a raiz positiva.
+       //Equa√ß√£o que da a raiz positiva.
        x1 = (-b + sqrt(delta)) / (2 * a);
-       //EquaÁ„o que da a raiz negativa
+       //Equa√ß√£o que da a raiz negativa
        x2 = (-b - sqrt(delta)) / (2 * a);
        
        //Quarta interface do usuario, ela da as respostas finais caso os numeros tenham raizes.
-       cout << "As raizes da equaÁ„o s„o: " << x1 << " e " << x2 << endl;
+       cout << "As raizes da equa√ß√£o s√£o: " << x1 << " e " << x2 << endl;
    }
-   //Interface do usuario que vai aparecer caso as escolhas de numeros n„o tenham raiz exata, ou seja, delta menor que 0.
+   //Interface do usuario que vai aparecer caso as escolhas de numeros n√£o tenham raiz exata, ou seja, delta menor que 0.
    else {
        //Interface que aparece caso o delta seja menor que 0
-       cout << "A equaÁ„o n„o tem raizes reais" << endl;
+       cout << "A equa√ß√£o n√£o tem raizes reais" << endl;
    }
    
     return 0;
