@@ -1,5 +1,6 @@
 //Ligação com uma biblioteca. Iostream permite a entrada e saída de informação.
 #include <iostream>
+//Evita a repetição do "std::"
 using namespace std;
 //Começo do código. É necessário usar para o funcionamento do código.
 int main() {
