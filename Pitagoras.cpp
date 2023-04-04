@@ -1,29 +1,30 @@
-//Ligação com uma biblioteca. Iostream permite a entrada e saída de informação.
+//LigaÃ§Ã£o com uma biblioteca. Iostream permite a entrada e saÃ­da de informaÃ§Ã£o.
 #include <iostream>
-//Biblioteca focada em operações matematicas.
+//Biblioteca focada em operaÃ§Ãµes matematicas.
 #include <cmath>
+//Evita a repetiÃ§Ã£o do "std::"
 using namespace std;
-//Começo do código. É necessário usar para o funcionamento do código.
+//ComeÃ§o do cÃ³digo. Ã‰ necessÃ¡rio usar para o funcionamento do cÃ³digo.
 int main() {
-    //Declaração das variaveis.
+    //DeclaraÃ§Ã£o das variaveis.
    float catetoA, catetoB, hipotenusa;
    
    //Interface do usuario.
    cout << "Digite o valor do catetoA: ";
-   //Recebe a informação do usuario.
+   //Recebe a informaÃ§Ã£o do usuario.
    cin >> catetoA;
    //Segunda interface do usuario.
    cout << "Digite o valor do catetoB: ";
-   //Recebe a informação referente a a interface anterior.
+   //Recebe a informaÃ§Ã£o referente a a interface anterior.
    cin >> catetoB;
    
-   //Equação feita para encontrar a raiz quadrada da hipotenusa. Uso do cmath.
+   //EquaÃ§Ã£o feita para encontrar a raiz quadrada da hipotenusa. Uso do cmath.
    hipotenusa = sqrt (pow(catetoA,2) + pow (catetoB, 2));
  
    
    
    //Interface que dara a resposta
-   cout << "O valor da hipotenusa é: " << hipotenusa << endl;
+   cout << "O valor da hipotenusa Ã©: " << hipotenusa << endl;
    
     return 0;
 }
