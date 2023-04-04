@@ -1,25 +1,26 @@
-//Ligação com uma biblioteca. Iostream permite a entrada e saída de informação.
+//LigaÃ§Ã£o com uma biblioteca. Iostream permite a entrada e saÃ­da de informaÃ§Ã£o.
 #include <iostream>
+//Evita a repetiÃ§Ã£o do "std::"
 using namespace std;
-//Começo do código. É necessário usar para o funcionamento do código.
+//ComeÃ§o do cÃ³digo. Ã‰ necessÃ¡rio usar para o funcionamento do cÃ³digo.
 int main() {
-    //Declaração das variaveis.
+    //DeclaraÃ§Ã£o das variaveis.
    float base, altura, area;
    
    //Interface do usuario.
    cout << "Digite a base do triangulo: ";
-   //Recebe a informação do usuario.
+   //Recebe a informaÃ§Ã£o do usuario.
    cin >> base;
    //Segunda interface do usuario.
    cout << "Digite a altura do triangulo: ";
-   //Recebe a informação referente a a interface anterior.
+   //Recebe a informaÃ§Ã£o referente a a interface anterior.
    cin >> altura;
    
-   //Equação para achar a area do triangulo.
+   //EquaÃ§Ã£o para achar a area do triangulo.
    area = (base * altura) /2;
    
    //Interface que dara a resposta
-   cout << "A area do traingulo é: " << area << endl;
+   cout << "A area do traingulo Ã©: " << area << endl;
    
     return 0;
 }
